@@ -6,7 +6,7 @@ import { AbcSettingTab } from "./setting-tab"
 
 export default class extends Plugin<AbcSettings> {
 
-  private lang: string
+  private lang = DEFAULT_SETTINGS.codeblockType
   private processorDisposable: any
 
   onload() {
@@ -33,10 +33,11 @@ export default class extends Plugin<AbcSettings> {
 
     this.register(
       this.processorDisposable =
-      this.app.workspace.activeEditor.postProcessor.register(
+      this.app.features.markdownEditor.postProcessor.register(
         CodeblockPostProcessor.from({
           lang: [this.lang],
-          preview: async (code, pre) => {
+          exportPreview: true,
+          preview: (code, pre) => {
             const el = (pre.querySelector('.md-diagram-panel-preview .abcjs-container')
               ?? html`<div class="abcjs-container">`) as HTMLElement
 

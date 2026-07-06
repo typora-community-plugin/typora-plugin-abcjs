@@ -1,6 +1,7 @@
-import { I18n, SettingTab } from "@typora-community-plugin/core"
+import { I18n, path, SettingTab } from "@typora-community-plugin/core"
 import type FrontMatterPlugin from "./main"
 import { DEFAULT_SETTINGS } from "./settings"
+import * as Locale from './locales/lang.en.json'
 
 
 export class AbcSettingTab extends SettingTab {
@@ -9,21 +10,14 @@ export class AbcSettingTab extends SettingTab {
     return 'ABC Music Notation'
   }
 
-  i18n = new I18n({
-    resources: {
-      'en': {
-        codeblockType: 'Codeblock language name',
-        codeblockTypeDesc: 'Used to indicate that the codeblock\'s language is ABC music notation.',
-      },
-      'zh-cn': {
-        codeblockType: '代码块语言名',
-        codeblockTypeDesc: '用于表示该代码块的语言为 ABC 记谱法。',
-      },
-    }
-  })
+  i18n!: I18n<typeof Locale>
 
   constructor(private plugin: FrontMatterPlugin) {
     super()
+
+    this.i18n = new I18n<typeof Locale>({
+      localePath: path.join(plugin.manifest.dir!, 'locales')
+    })
   }
 
   show() {
