@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "settings": {
     "displayLang": "zh-cn",
     "githubProxy": "github",
@@ -7,7 +7,6 @@
     "keepSearchResult": false,
     "showSearchResultFullPath": false,
     "showRibbon": true,
-    "showFileTabs": true,
     "openLinkInCurrentWin": true,
     "quickOpenInCurrentWin": true,
     "ignoreFile": true,

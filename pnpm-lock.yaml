@@ -46,11 +46,11 @@ importers:
         specifier: 16.18.0
         version: 16.18.0
       '@types/typora':
-        specifier: npm:@typora-community-plugin/typora-types@^1.0.6
-        version: '@typora-community-plugin/typora-types@1.0.12'
+        specifier: npm:@typora-community-plugin/typora-types@^1.0.17
+        version: '@typora-community-plugin/typora-types@1.0.17'
       '@typora-community-plugin/core':
-        specifier: ^2.4.1
-        version: 2.4.1
+        specifier: ^2.10.42
+        version: 2.10.42
       archiver:
         specifier: ^5.3.2
         version: 5.3.2
@@ -816,8 +816,8 @@ packages:
     resolution: {integrity: sha512-dfUnCxiN9H4ap84DvD2ubjw+3vUNpstxa0TneY/Paat8a3R4uQZDLSvWjmznAY/DoahqTHl9V46HF/Zs3F29pg==}
     engines: {node: '>= 10.0.0'}
 
-  '@plylrnsdy/decorate.js@1.0.1':
-    resolution: {integrity: sha512-bXwea+WJ3GOJDnXnzmhK1fUJnSOBiN/mjaPNryY+Shy0hPS1qr3cngsWOGEOgCddBFzef5cELObC6HDlIQ8Uxg==}
+  '@plylrnsdy/decorate.js@1.0.4':
+    resolution: {integrity: sha512-Sj6CnM2NC4vuTUYoGtxSOrlehfaQRariXIZ1L4TyQEls7r1eXahYgXcJkwqP+2g+v+NHyM1lXwZOOs5iic4P+Q==}
 
   '@rollup/plugin-babel@6.0.4':
     resolution: {integrity: sha512-YF7Y52kFdFT/xVSuVdjkV5ZdX/3YtmX0QulG+x0taQOtJdHYzVU61aSSkAgVJ7NOv6qPkIYiJSgSWWN/DM5sGw==}
@@ -1022,8 +1022,8 @@ packages:
   '@types/resolve@1.20.2':
     resolution: {integrity: sha512-60BCwRFOZCQhDncwQdxxeOEEkbc5dIMccYLwbxsS4TUNeVECQ/pBJ0j09mrHOl/JJvpRPGwO9SvE4nR2Nb/a4Q==}
 
-  '@typora-community-plugin/core@2.4.1':
-    resolution: {integrity: sha512-fdVPiDrtlOA2OYs9cfJyJ0JBUo96bYGMNS30pPIupyr0KDfY8669HPvAltS/0+kokxEup5Zz0/3awyyd/FKBrg==}
+  '@typora-community-plugin/core@2.10.42':
+    resolution: {integrity: sha512-PL+3eSDAAQ0Tgbhfvd2+UWoqeCym8L/6AVSfyg9n+b+5bp6lTTQlndDG+5VjD02Bg/cZvbYZXtgGI0Vld3EUvg==}
 
   '@typora-community-plugin/esbuild-plugin-typora@1.0.12':
     resolution: {integrity: sha512-iOEM8e0Y7/83dqVHm2HX9XglL0BD0t4NTbH4PKtea7ohrOxI/frkWb4nHW4iMoxp5mVBdCf5QUpcm3H6DeIfdQ==}
@@ -1031,8 +1031,8 @@ packages:
   '@typora-community-plugin/rollup-plugin-typora@1.0.5':
     resolution: {integrity: sha512-oNigMG4r5t+dwLs4N4Dn7xZviKBPbKYIGJQPAsIJIGtA06Wdw1i+FNMInGFbt3Ff1jKlikr52OmCAkMxmEcXGA==}
 
-  '@typora-community-plugin/typora-types@1.0.12':
-    resolution: {integrity: sha512-40egl0Hsr8XoAalt8Vq6Py1lC79wVfCncfuZhSc/8WlWH1DKjGutX0IxUjUMxvBSy/Fs5dAzVeJCmgiJMwFSsA==}
+  '@typora-community-plugin/typora-types@1.0.17':
+    resolution: {integrity: sha512-NlrGNixRkiBPGLfC7A/3k/U2ZedufuJywdqwqI2YXz0c2l/jgoskmMjJSfbFcv94v2ntbkm/7/36gnq3OMOgzA==}
 
   abcjs@6.4.4:
     resolution: {integrity: sha512-dT3Z2vb8yihbiPMzSoup0JOcvO2je4qpFNlTD+kS5VBelE3AASAs18dS5qeMWkZeqCz7kI/hz62B2lpMDugWLA==}
@@ -2308,7 +2308,7 @@ snapshots:
       '@parcel/watcher-win32-x64': 2.5.1
     optional: true
 
-  '@plylrnsdy/decorate.js@1.0.1':
+  '@plylrnsdy/decorate.js@1.0.4':
     dependencies:
       typescript: 5.8.3
 
@@ -2447,15 +2447,15 @@ snapshots:
 
   '@types/resolve@1.20.2': {}
 
-  '@typora-community-plugin/core@2.4.1':
+  '@typora-community-plugin/core@2.10.42':
     dependencies:
-      '@plylrnsdy/decorate.js': 1.0.1
+      '@plylrnsdy/decorate.js': 1.0.4
 
   '@typora-community-plugin/esbuild-plugin-typora@1.0.12': {}
 
   '@typora-community-plugin/rollup-plugin-typora@1.0.5': {}
 
-  '@typora-community-plugin/typora-types@1.0.12': {}
+  '@typora-community-plugin/typora-types@1.0.17': {}
 
   abcjs@6.4.4: {}
 

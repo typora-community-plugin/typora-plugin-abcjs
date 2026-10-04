@@ -7,6 +7,6 @@
   "repo": "typora-community-plugin/typora-plugin-abcjs",
   "version": "1.2.0",
   "minAppVersion": "1.5.0",
-  "minCoreVersion": "2.4.1",
+  "minCoreVersion": "2.10.42",
   "platforms": ["win32", "linux", "darwin"]
 }
